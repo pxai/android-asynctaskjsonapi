@@ -100,6 +100,7 @@ public class WebRequest {
             URL url = new URL(urlString);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
+            connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("User-Agent", userAgent);
 
             connection.setDoOutput(true);
