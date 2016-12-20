@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void accessData (View view) {
         JsonAsyncTask jsonAsynTask = new JsonAsyncTask(this);
-        //jsonAsynTask.execute("http://wzw.io/meetup.json");
+
         jsonAsynTask.execute("http://wzw.io/web/admin/api/meetup");
     }
 
